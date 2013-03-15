@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>英才招聘</title>
+<link href="Css/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="Logo"></div>
+<div id="Nav">
+  <div class="BarLeft"></div>
+  <div id="NavContent">
+    <ul>
+      <li><a href="dr_admin.php">公司信息</a></li>
+      <li><a href="dr_faq.php">有问必答</a></li>
+      <li><a href="dr_project.php">项目简介</a></li>
+      <li><a href="dr_hunter.php">英才招聘</a></li>
+      <li><a href="dr_upload.php">资源下载</a></li>
+      <li><a href="dr_activity.php">员工活动</a></li>
+      <li><a href="dr_config.php">管理员设置</a></li>
+      <li><a href="dr_loginoff.php?unsession=1">退出</a></li>
+    </ul>
+  </div>
+  <div class="BarRight"></div>
+  <div class="Cal"></div>
+</div>
+<div id="Content">
+  <div id="ContentLeft">
+    <div id="ContentLeftTop">
+      <div class="BarLeft"></div>
+      <div id="ContentLeftTopText">公司信息</div>
+      <div class="BarRight"></div>
+      <div class="Cal"> </div>
+    </div>
+    <div id="ContentLeftBox">
+      <ul>
+        <li><a href="dr_hunter.php">增加招聘</a></li>
+      	<li><a href="dr_hunter_del.php">删除招聘</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="ContentRight">
+    <div id="ContentRightTop">
+      <div class="BarLeft"></div>
+      <div id="ContentRightTopText">公司信息</div>
+      <div class="BarRight"></div>
+      <div class="Cal"></div>
+    </div>
+    {foreach from=$jobList item=jobListItem}
+    <form id="faq" name="faq" method="post" action="dr_hunter_del.php">
+    <div id="ContentRightBox">
+      <table width="100%" cellpadding="0" class="Table1" bordercolor="#4ab902" border="1" cellspacing="0">
+        <tr>
+          <td height="25" align="right">招聘名称：</td>
+          <td>{$jobListItem.title}</td>
+        </tr>
+        <tr>
+          <td height="25" align="right">任职要求：</td>
+          <td>{$jobListItem.conditions}</td>
+        </tr>
+        <tr>
+          <td height="25" align="right">联系人：</td>
+          <td>{$jobListItem.name}</td>
+        </tr>
+        <tr>
+          <td height="25" align="right">联系电话：</td>
+          <td>{$jobListItem.phone}</td>
+        </tr>
+       	<tr>
+       	<td></td>
+        <td height="25" align="right">
+      	<input type="hidden" name="Del" value="{$jobListItem.id}" > 
+	  	<input name="DelButton" type="submit" class="Button" id="DelButton" value="删除" />
+	  	</td>
+        </tr>
+      </table>
+      </form>
+    </div>
+    {/foreach}
+    <div class="Cal"></div>
+  </div>
+</div>
+</body>
+</html>

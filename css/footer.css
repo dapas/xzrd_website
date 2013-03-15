@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+#footer{
+	clear:both;
+	width:960px;
+	margin:80px auto 50px auto;
+	border-top:#4E4E4E 2px solid;
+	padding-top:10px;
+}
+#footer p{
+	color:#7F7F7F;
+	font-size:12px;
+	height:16px;
+	line-height:16px;
+}
+#footer p a{
+	padding:0 10px;
+}

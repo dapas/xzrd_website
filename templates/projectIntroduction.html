@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>徐州容德道桥股份有限公司</title>
+<link rel="stylesheet" type="text/css" href="css/html5-base.css" />
+<link rel="stylesheet" type="text/css" href="css/header.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/footer.css" />
+</head>
+
+<body>
+	<div id="header">
+    	<div id="top">
+        	<div id="logo"><img src="img/logo.gif" /></div>
+            <div id="nav">
+            	<ul>
+                	<li><a href="index.php">首页</a></li>
+                    <li>|</li>
+                    <li><a href="companyProfile.php">公司概况</a></li>
+                    <li>|</li>
+                    <li><a href="faq.php">有问必答</a></li>
+                    <li>|</li>
+                    <li><a href="activity.php">员工活动</a></li>
+                    <li>|</li>
+                    <li class="choosed"><a href="projectIntroduction.php">项目简介</a></li>
+                    <li>|</li>
+                    <li><a href="recruitment.php">英才招聘</a></li>
+                    <li>|</li>
+                    <li><a href="download.php">资源下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="locate">
+    	<div><img src="img/top.jpg" alt="" /></div>
+        <div id="myLocate"><a href="index.php">首页</a><span>></span>项目简介</div>
+    </div>
+    <div id="main">
+    	<div id="sideBar">
+        	<ul>
+            	<li>
+                	<a href="companyProfile.php">
+                    	<p class="chinese">公司概况</p>
+                        <p class="English">COMPANY PROFILE</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="faq.php">
+                    	<p class="chinese">有问必答</p>
+                        <p class="English">FAQ</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="activity.php">
+                    	<p class="chinese">员工活动</p>
+                        <p class="English">MEMEBER ACTIVITY</p>
+                    </a>
+                </li>
+                <li class="sideChoosed">
+                	<a href="projectIntroduction.php">
+                    	<p class="chinese">项目简介</p>
+                        <p class="English">PROJECT INTRODUCTION</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="recruitment.php">
+                    	<p class="chinese">英才招聘</p>
+                        <p class="English">RECRUITMENT</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="download.php">
+                    	<p class="chinese">资料下载</p>
+                        <p class="English">DOWNLOAD</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+        	<h3>
+            	<p class="Hchinese">项目简介</p>
+                <p class="HEnglish">PROJECT INTRODUCTION</p>
+            </h3>
+            <div class="article">
+            	{foreach from=$projectList item=projectListItems}
+                	<h4>{$projectListItems.title}</h4>
+                	<p>{$projectListItems.content}</p>
+                {/foreach}
+            </div>
+            
+        </div>
+        <div class="cb"></div>
+    </div>
+    <div id="footer">
+    	<p>友情链接：<a href="http://bridge.tongji.edu.cn/">同济大学桥梁工程系</a><a href="http://www.iabse.ethz.ch/">国际桥梁及结构工程协会</a><a href="http://www.cces.net.cn">中国土木工程协会</a><a href="http://www.civilcn.com/">中国土木工程网</a><a href="http://www.ghcivil.com/">关海土木</a><a href="http://www.okok.org/">中华钢结构论坛</a></p>
+        <p>徐州容德道桥股份有限公司 2011 © 版权所有 </p>
+        <p>COPYRIGHT © 2011 XUZHOU RONGDE CO., LTD.ALL RIGHTS RESERVED </p>
+    </div>
+</body>
+</html>

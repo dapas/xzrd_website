@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	width:960px;
+	margin:0 auto;
+}
+}
+/*slide---------------------------*/
+#slideBox{
+	width:960px;
+	height:360px;
+}
+ .grid_11 {
+	display:inline;
+	width:960px;
+	height:360px;
+}
+#slide
+{
+    float: left;
+}
+
+.slideInner
+{
+    height:360px;
+    width: 4000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#slide div.imgWrap
+{
+    position: relative;
+    float: left;
+    width: 960px;
+    height:360px;
+}
+#slide img
+{
+    width: 960px;
+    height: 360px;
+    padding: 0px;
+}
+#slide .button
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 10px;
+}
+#slide .button li
+{
+    float: left;
+    width: 18px;
+    height: 16px;
+    cursor: pointer;
+    overflow: hidden;
+	font-size:12px;
+	text-align:center;
+	border: 1px solid #333333;
+    margin: 0 2px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+#slide .button li.now
+{
+    background: #333333;
+}
+.slideWrap
+{
+    position: relative;
+    overflow: hidden;
+}
+#content{
+		margin-top:35px;
+}
+h2{
+	background:url(../img/blueBg.gif) no-repeat;
+	height:18px;
+	font-size:16px;
+	padding-left:10px;
+	margin-bottom:15px;
+}
+#companyProfile{
+	width:470px;
+	border-right:1px solid #CCC;
+}
+#companyPic{
+	float:left;
+	width:170px;
+	height:120px;
+}
+#companyDetail{
+	padding-right:35px;
+	width:250px;
+	float:right;
+	font-size:12px;
+	color:#4E4E4E;
+}
+#companyDetail p{
+	text-indent:2em;
+}
+#companyDetail p a{
+	float:right;
+	color:#7994CB;
+}
+#download{
+	margin-left:20px;
+	border-right:1px solid #CCC;
+	width:220px;
+	overflow:hidden;
+}
+#download ul li{
+	height:21px;
+	line-height:21px;
+	font-size:14px;
+	color:#4E4E4E;
+}
+#download ul li a{
+	font-size:12px;
+}
+#contactUs p{
+	height:21px;
+	line-height:21px;
+	font-size:14px;
+	color:#4E4E4E;
+}

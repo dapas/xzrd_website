@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+#header{
+	height:90px;
+	background:url(../img/top_bg.gif) repeat-x;
+}
+#top{
+	height:90px;
+	width:960px;
+	margin:0 auto;
+}
+#logo{
+	float:left;
+}
+#nav{
+	margin-top:44px;
+	float:right;
+}
+#nav ul li{
+	float:left;
+	height:12px;
+	line-height:12px;
+	font-size:12px;
+}
+#nav ul li a{
+	cursor:pointer;
+	text-decoration:none;
+	padding:0 12px;
+}
+.choosed a{
+	color:#6297E3;
+}
+#locate{
+	width:960px;
+	margin:0 auto;
+}
+#locate div img{
+	width:960px;
+}
+#myLocate{
+	height:34px;
+	line-height:34px;
+}
+#locate div a{
+	cursor:pointer;
+	color:#4D4D4D;
+}
+#locate div span{
+	color:#4D4D4D;
+}
